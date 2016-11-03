@@ -59,6 +59,7 @@ abbr {
 	}
 
 .intro { 
+	background: lightgray;
 	min-width: 470px;
 	width: 100%;
 	}
