@@ -26,7 +26,7 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: italic normal 1.4em Arial, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
@@ -52,7 +52,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	background: url(http://vignette3.wikia.nocookie.net/gravityfalls/images/a/a0/Short17_oh_uh_laser_cows_are_pretty_cool.png/revision/latest?cb=20140529051909) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
