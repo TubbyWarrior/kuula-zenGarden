@@ -25,3 +25,43 @@ h1 {
     margin:0;
     
 }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    body {
+       margin: 0 auto;    
+       max-width: 80%; 
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+       margin: 0 auto;    
+       max-width: 70%; 
+    }
+    .preamble {
+       
+    }
+    .explanation {
+        max-width: 50%;
+       float: left;
+        margin-right: 1em;  
+    }
+    .participation {
+        max-width: 50%;
+       float: right;
+        margin-right: 1em;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px) {
+     body {
+           
+       max-width: 60%; 
+    }   
+}    
