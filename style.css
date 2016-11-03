@@ -59,7 +59,6 @@ abbr {
 	}
 
 .intro { 
-	background: lightgray;
 	min-width: 470px;
 	width: 100%;
 	}
@@ -92,6 +91,7 @@ header {
 }
 
 .summary {
+	background: lightgray;
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
