@@ -42,7 +42,7 @@ h3 {
     overflow:hidden;
     letter-spacing: 0px;
     text-wrap: balance;
-    margin: -4px 0 .2em 0;
+    margin: 0px 0 .2em 0;
     transition: .5s ease-out;
 }
 a {
@@ -141,6 +141,21 @@ h2 {
     letter-spacing: 1px;
     margin-top: -15px;
 }
+ footer {
+        background: white;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2em 0 0;
+    }
+footer a {
+    font-family: didot;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2em;
+    padding:0 .5em;
+    max-width: 100%;
+}
 
 
 /* ==========================================================================
@@ -148,12 +163,10 @@ h2 {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-body {
-    margin: 0 auto;    
-    max-width: 100%; 
-    }
+
     
 }
+
 
 @media only screen and (min-width: 768px) {
     
@@ -165,7 +178,7 @@ body {
 .sidebar,
 aside,    
 div {
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
 }    
 div[role=article] {
@@ -206,7 +219,7 @@ p:last-of-type {
     margin: 0;
     padding: 0;     
 }
-/*------------summary-------------   */
+/*------------summary--------------------------------*/
 .summary {
         padding: 2em 0 2em 0;
     }
@@ -237,7 +250,7 @@ p:last-of-type {
     color: tomato;
 }    
     
-/*--------preamble    */
+/*--------preamble----------------------------------*/
     .preamble h3 {
         left: 35%;
         max-width: 70%;
@@ -251,7 +264,7 @@ p:last-of-type {
         padding: 0;
     }
     
-/*---------explanation   */
+/*---------explanation------------------------------*/
     .explanation h3 {
         text-align: right;
         left: 11%;
@@ -267,7 +280,7 @@ p:last-of-type {
         padding: 0;
         
     }
-/*--------participation    */
+/*--------participation--------------------------------*/
     .participation h3 {
         left: 39%;
     }
@@ -275,7 +288,7 @@ p:last-of-type {
         max-width: 40%;
         padding-left: 5%;
     }
-/*---------benefits   */
+/*---------benefits-------------------------------------*/
     .benefits h3 {
         max-width: 40%;
         text-align: right;
@@ -288,7 +301,7 @@ p:last-of-type {
         text-align: left;
         padding-left: 2em;   
     }
-/*--------requirements    */
+/*--------requirements-------------------------------------*/
     .requirements h3 {
         left: 49%;
     }
@@ -306,7 +319,7 @@ p:last-of-type {
        border-left: solid white 2px; 
     }
     
-/*----------transitions-----------*/
+/*----------transitions-----------------------------------*/
     .preamble:hover p,
     .explanation:hover p,
     .participation:hover p,
@@ -332,7 +345,7 @@ p:last-of-type {
         padding-left: 0;
         border: none;
     }     
-/*----------header--------------    */    
+/*----------header----------------------------------    */    
 h1,
 h2 {
     display: inline-block; 
@@ -345,9 +358,10 @@ h2 {
     margin-top: .75em;
     margin-right: 3%;     
 } 
-/*-------select-----------*/
+/*-------select-----------------------------------------*/
     .design-selection {
         margin: 0;
+        margin-top: -1em;
         padding: 0;
         position: relative;
     } 
@@ -360,6 +374,7 @@ h2 {
         max-width: 60%;
         padding: 0;
         border-right: solid white 2px;
+        transition: .5s;
     }   
     .design-selection li {
         font-size: 1em;
@@ -378,40 +393,59 @@ h2 {
     .design-selection li a:last-of-type {
         float: right;
         padding: 0;
+        transition: 1.5s ease-out;
 }
+   .design-selection li a:last-of-type:hover {
+        float: right;
+        padding-left: 3em;
+       transition: .1s ease-out;
+}    
     .design-selection li a:first-of-type {
         float: left;
         padding: 0;
 }
     
-/*------designarchives-------*/
+/*------designarchives-------------------------------------*/
 .design-archives {
     padding: 0;
     margin: 0;
+    margin-top: -1em;
     position: relative;
 }
 .design-archives li {
     font-size: 1em;
     list-style-type:none;
     text-transform: uppercase;
-    line-height: 270px;
+/*    line-height: 270px;*/
     text-align: right;
     max-width: 43%;
     margin-left: -3%;
     padding-right: 2em;
+    padding-top: 6em;
+    padding-bottom: 6em;
     border-right: solid white 2px;
+    transition: 1.5s ease-out;
 }
-    .design-archives li a:hover {
-        color: tomato;
-    }    
+.design-archives:hover li:first-of-type {
+    padding-top: 11.5em;
+    padding-bottom: .5em;
+    transition: .5s ease;
+} 
+.design-archives:hover li:last-of-type {
+    padding-top: .5em;
+    padding-bottom: 11.5em;
+    transition: .5s ease;
+}     
+ 
 .design-archives h3 {
     max-width: 50%;
     left: 42%;
 }
-/*--------resoureces----------    */
+/*--------resources------------------------------------    */
     div [id=zen-resources] {
         position: relative;
         margin: 0;
+        margin-top: -1em;
         padding: 0;
     }
     .resources {
@@ -427,7 +461,8 @@ h2 {
         margin-left: -3%;
         padding-right: 2em;
         padding-top: 1em;    
-        border-right: solid white 2px;  
+        border-right: solid white 2px;
+        transition: 1s ease-out;
     } 
     .zen-resources li:first-of-type {
         padding-top: 6em;
@@ -435,28 +470,43 @@ h2 {
     .zen-resources li:last-of-type {
         padding-bottom: 6em;
     }
-    .zen-resources li a:hover {
-        color: tomato;
+    .zen-resources li:hover {
+        letter-spacing: 2pt;
+        transition: .5s ease-out;
     }
-/*----------footer----------*/
+/*----------footer-----------------------------------------*/
     footer {
-        position: absolute;
-        background: none;
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: 125vh;
-        text-align: center;
+/*        padding: 6em 0 6em;*/
+        margin-top: -2em;
     }
     footer a {
         display: inline-block;
-        margin-left: 01em;
+        font-family: didot;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2em;
+        padding:0 .5em;
         max-width: 100%;
+        transition: 1.5s ease-out; 
+        border-right: solid white 2px;
     }
+    footer a:first-of-type {
+        border-left: solid white 2px;
+        padding-left: 1em;
+    }
+   
     footer a:hover {
-       color: tomato;
+        padding: 6em 1em;
+        border-right: solid gray 2px;
+        transition: .5s ease-out;
+    }
+     footer a:last-of-type {
+        padding: 6em .5em 6em .5em;
+        border: none; 
     }
 
 }
+    
 @media only screen and (min-width: 1600px) {
 body {     
     max-width: 1600px;
@@ -473,8 +523,5 @@ body {
 p {
     padding-left: 10em;
 }  
-.design-archives {
-    padding: 0;
-    margin: 0;
-}       
+     
 }    
