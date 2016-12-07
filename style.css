@@ -12,8 +12,9 @@ body {
 }
 div {
     clear: all;
-    margin: 0 0 2em 0;
+    margin: 0 0 2em -1%;
     padding-bottom: 2em;
+    width: 102%;
 }
 p,
 h3 {
@@ -41,7 +42,6 @@ h3 {
     word-break: break-all;
     overflow:hidden;
     letter-spacing: 0px;
-    text-wrap: balance;
     margin: 0px 0 .2em 0;
     transition: .5s ease-out;
 }
@@ -90,16 +90,16 @@ li a:hover {
 /*-----backgrounds--------------*/
 
 .preamble {
-    background: #f24b6a;
+    background: #e84d28;
 }
 .explanation {
-    background: #63f9b9; 
+    background: #D8FF12; 
 }
 .participation {
-    background: #00D1FF; 
+    background: gray; 
 }
 .benefits {
-    background: #f9c301; 
+    background: lightgray; 
 }
 .requirements {
     background: #e84d28;
@@ -111,7 +111,7 @@ li a:hover {
     background: lightgray;
 }
 .zen-resources {
-    background: gray;
+    background: #e84d28;
 }
 
 /*-----------header------------*/
@@ -157,16 +157,9 @@ footer a {
     max-width: 100%;
 }
 
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-    
-}
-
 
 @media only screen and (min-width: 768px) {
     
@@ -179,7 +172,9 @@ body {
 aside,    
 div {
     margin-bottom: 0;
+    margin-left:0;
     padding: 0;
+    width: 100%;
 }    
 div[role=article] {
     position: relative;
@@ -462,7 +457,7 @@ h2 {
         padding-right: 2em;
         padding-top: 1em;    
         border-right: solid white 2px;
-        transition: 1s ease-out;
+        transition: .5s ease-out;
     } 
     .zen-resources li:first-of-type {
         padding-top: 6em;
@@ -476,7 +471,6 @@ h2 {
     }
 /*----------footer-----------------------------------------*/
     footer {
-/*        padding: 6em 0 6em;*/
         margin-top: -2em;
     }
     footer a {
@@ -504,7 +498,6 @@ h2 {
         padding: 6em .5em 6em .5em;
         border: none; 
     }
-
 }
     
 @media only screen and (min-width: 1600px) {
@@ -522,6 +515,5 @@ body {
 }
 p {
     padding-left: 10em;
-}  
-     
+}      
 }    
